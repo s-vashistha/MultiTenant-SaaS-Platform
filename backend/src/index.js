@@ -62,7 +62,7 @@ const PORT = process.env.PORT || 5000;
       console.log(`   Health: http://localhost:${PORT}/api/health\n`);
     });
   } catch (err) {
-    console.error('❌ Failed to start server:', err.message);
+    console.error('❌ Failed to start server:', err);
     process.exit(1);
   }
 })();
