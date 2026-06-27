@@ -1,0 +1,14 @@
+{
+  "name": "nexacore",
+  "version": "1.0.0",
+  "description": "Multi-Tenant SaaS Platform with RBAC and JWT Auth",
+  "scripts": {
+    "setup": "node scripts/setup.js",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\""
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
